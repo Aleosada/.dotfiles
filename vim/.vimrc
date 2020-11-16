@@ -106,7 +106,7 @@ inoremap <expr> <cr>    pumvisible() ? "\<C-y>" : "\<cr>"
 
 " OmniSharp: {{{
 let g:OmniSharp_popup_position = 'peek'
-let g:OmniSharp_server_use_mono = 1
+let g:OmniSharp_server_use_mono = 0
 if has('nvim')
   let g:OmniSharp_popup_options = {
   \ 'winhl': 'Normal:NormalFloat'

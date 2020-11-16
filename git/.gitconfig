@@ -1,0 +1,5 @@
+[alias]
+	lga = log --decorate --oneline --graph
+[user]
+	name = Alexandre Osada
+	email = alexandre.osada@gmail.com
