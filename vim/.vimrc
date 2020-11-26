@@ -197,3 +197,7 @@ nnoremap <silent> <leader>f  :Files<CR>
 nnoremap <silent> <leader>gf :GFiles<CR>
 nnoremap <silent> <leader>b  :Buffers<CR>
 nnoremap <silent> <leader>rg  :Rg<CR>
+
+" Mapemanto para xclip
+vmap <C-y> :!xclip -f -sel clip<CR>
+map <C-p> :-1r !xclip -o -sel clip<CR>
