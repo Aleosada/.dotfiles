@@ -200,4 +200,7 @@ nnoremap <silent> <leader>rg  :Rg<CR>
 
 " Mapemanto para xclip
 vmap <C-y> :!xclip -f -sel clip<CR>
-map <C-p> :-1r !xclip -o -sel clip<CR>
+map <C-p> :-1r !xclip -o -sel clip<CR>`z
+
+" Abbreviations
+abbr _bash #!/bin/bash
