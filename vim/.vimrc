@@ -42,6 +42,10 @@ Plug 'gruvbox-community/gruvbox'
 " Omnisharp
 Plug 'omnisharp/omnisharp-vim'
 
+" Javascript and jsx support
+Plug 'othree/yajs.vim'
+Plug 'mxw/vim-jsx'
+
 " Mappings, code-actions available flag and statusline integration
 Plug 'nickspoons/vim-sharpenup'
 
@@ -54,6 +58,11 @@ Plug 'junegunn/fzf.vim'
 
 " Autocompletion
 Plug 'prabirshrestha/asyncomplete.vim'
+Plug 'prabirshrestha/vim-lsp'
+Plug 'prabirshrestha/asyncomplete-lsp.vim'
+Plug 'ryanolsonx/vim-lsp-javascript'
+Plug 'runoshun/tscompletejob'
+Plug 'prabirshrestha/asyncomplete-tscompletejob.vim'
 
 " Snippet support
 if s:using_snippets
@@ -93,10 +102,30 @@ let g:ale_sign_info = '·'
 let g:ale_sign_style_error = '·'
 let g:ale_sign_style_warning = '·'
 
-let g:ale_linters = { 'cs': ['OmniSharp'] }
+let g:ale_linters = { 'cs': ['OmniSharp'], 'javascript': ['eslint'] }
 " }}}
 
 " Asyncomplete: {{{
+call asyncomplete#register_source(asyncomplete#sources#tscompletejob#get_source_options({
+    \ 'name': 'tscompletejob',
+    \ 'allowlist': ['typescript'],
+    \ 'completor': function('asyncomplete#sources#tscompletejob#completor'),
+    \ }))
+
+if executable('vim-language-server')
+  augroup LspVim
+    autocmd!
+    autocmd User lsp_setup call lsp#register_server({
+        \ 'name': 'vim-language-server',
+        \ 'cmd': {server_info->['vim-language-server', '--stdio']},
+        \ 'whitelist': ['vim'],
+        \ 'initialization_options': {
+        \   'vimruntime': $VIMRUNTIME,
+        \   'runtimepath': &rtp,
+        \ }})
+  augroup END
+endif
+
 let g:asyncomplete_auto_popup = 1
 let g:asyncomplete_auto_completeopt = 0
 inoremap <expr> <C-j>   pumvisible() ? "\<C-n>" : "\<Down>"
