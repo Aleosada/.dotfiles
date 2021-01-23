@@ -36,6 +36,8 @@ Plug 'vim-airline/vim-airline'
 Plug 'preservim/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 
+Plug 'preservim/nerdtree'
+
 " Colorscheme
 Plug 'gruvbox-community/gruvbox'
 
@@ -93,6 +95,13 @@ endif
 
 set background=dark
 colorscheme gruvbox
+" }}}
+
+
+" NerdTree: {{{
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
 " }}}
 
 " ALE: {{{
