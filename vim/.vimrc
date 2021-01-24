@@ -5,6 +5,7 @@ set hidden												                " Configuração quer permite abrir um nov
 
 let $VIMRC="$HOME/.vim/vimrc"										    " Cria variável de ambiente apontando para o arquivo $HOME/.vim/vimrc
 
+set exrc                                                                " Faz o source do vimrc local do projeto
 set shiftwidth=4											            " Configura o tamanho da identação para 4 quando utilizado os comando de shift >> e <<
 set tabstop=4												            " Altera a quantidade de espaços do tab para 4
 set softtabstop=4
@@ -17,6 +18,7 @@ set nowrap                                                              " Remove
 set incsearch                                                           " Highlight da pesquisa durante a digitação
 set nobackup
 set noswapfile
+set scrolloff=8                                                         " Começa a fazer scroll da tela quando está a 8 posições do fim
 set path+=**,                                                           " Muda a variável path para buscar em todos os subdiretórios do diretório atual
 
 " Configurações para o autocomplete nativo
@@ -47,6 +49,9 @@ Plug 'omnisharp/omnisharp-vim'
 " Javascript and jsx support
 Plug 'othree/yajs.vim'
 Plug 'mxw/vim-jsx'
+
+" Emmet
+Plug 'mattn/emmet-vim'
 
 " Mappings, code-actions available flag and statusline integration
 Plug 'nickspoons/vim-sharpenup'
@@ -97,6 +102,9 @@ set background=dark
 colorscheme gruvbox
 " }}}
 
+" Emmet: {{{
+let g:user_emmet_leader_key=','
+" }}}
 
 " NerdTree: {{{
 nnoremap <C-n> :NERDTree<CR>
