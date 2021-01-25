@@ -53,6 +53,9 @@ Plug 'mxw/vim-jsx'
 " Emmet
 Plug 'mattn/emmet-vim'
 
+" Css colors preview
+Plug 'ap/vim-css-color'
+
 " Mappings, code-actions available flag and statusline integration
 Plug 'nickspoons/vim-sharpenup'
 
@@ -103,7 +106,7 @@ colorscheme gruvbox
 " }}}
 
 " Emmet: {{{
-let g:user_emmet_leader_key='<C-y>'
+let g:user_emmet_leader_key=','
 " }}}
 
 " NerdTree: {{{
@@ -209,7 +212,7 @@ if s:using_snippets
 endif
 
 if has('python3')
-    let g:UltiSnipsExpandTrigger="<leader>,"
+    let g:UltiSnipsExpandTrigger="<Tab>"
     let g:UltiSnipsJumpForwardTrigger="<Tab>"
     let g:UltiSnipsJumpBackwardTrigger="<S-Tab>"
     call asyncomplete#register_source(asyncomplete#sources#ultisnips#get_source_options({
