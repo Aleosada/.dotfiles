@@ -81,7 +81,15 @@ if s:using_snippets
   Plug 'prabirshrestha/asyncomplete-ultisnips.vim'
 endif
 
+" Debugger
+Plug 'puremourning/vimspector'
+Plug 'szw/vim-maximizer'
+
 call plug#end()
+
+" Debugger options
+let g:vimspector_base_dir='/home/aleosada/.vim/plugged/vimspector'
+let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
 
 " Colors: {{{
 augroup ColorschemePreferences
