@@ -83,6 +83,8 @@ endif
 
 " Debugger
 Plug 'puremourning/vimspector'
+
+" Maximizer
 Plug 'szw/vim-maximizer'
 
 call plug#end()
@@ -90,6 +92,7 @@ call plug#end()
 " Debugger options
 let g:vimspector_base_dir='/home/aleosada/.vim/plugged/vimspector'
 let g:vimspector_enable_mappings = 'VISUAL_STUDIO'
+
 
 " Colors: {{{
 augroup ColorschemePreferences
@@ -258,6 +261,9 @@ nnoremap <silent> <leader>rg  :Rg<CR>
 " Mapemanto para xclip
 vmap <C-y> :!xclip -f -sel clip<CR>
 map <C-p> :-1r !xclip -o -sel clip<CR>`z
+
+"Maximizer maps
+nnoremap <silent> <leader>ww :MaximizerToggle<CR>
 
 " Abbreviations
 abbr _bash #!/bin/bash
