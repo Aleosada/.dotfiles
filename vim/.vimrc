@@ -39,6 +39,8 @@ Plug 'preservim/nerdcommenter'
 Plug 'jiangmiao/auto-pairs'
 
 Plug 'preservim/nerdtree'
+Plug 'ryanoasis/vim-devicons'
+Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 
 " Colorscheme
 Plug 'gruvbox-community/gruvbox'
@@ -123,11 +125,6 @@ colorscheme gruvbox
 let g:user_emmet_leader_key=','
 " }}}
 
-" NerdTree: {{{
-nnoremap <C-n> :NERDTree<CR>
-nnoremap <C-t> :NERDTreeToggle<CR>
-nnoremap <C-f> :NERDTreeFind<CR>
-" }}}
 
 " ALE: {{{
 let g:ale_sign_error = '•'
@@ -277,6 +274,12 @@ autocmd FileType typescript nnoremap <buffer> <leader>jgd :TsuDefinition<CR>
 autocmd FileType typescript nnoremap <buffer> <leader>jtd :TsuTypeDefinition<CR>
 autocmd FileType typescript nnoremap <buffer> <leader>jr :TsuReferences<CR>
 autocmd FileType typescript nnoremap <buffer> <leader>ji :TsuImplementation<CR>
+
+" NerdTree mapping: {{{
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
+" }}}
 
 " Abbreviations
 abbr _bash #!/bin/bash
