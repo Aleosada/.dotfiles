@@ -87,6 +87,9 @@ Plug 'puremourning/vimspector'
 " Maximizer
 Plug 'szw/vim-maximizer'
 
+" Import for typescript
+Plug 'Quramy/tsuquyomi'
+
 call plug#end()
 
 " Debugger options
@@ -258,12 +261,22 @@ nnoremap <silent> <leader>gf :GFiles<CR>
 nnoremap <silent> <leader>b  :Buffers<CR>
 nnoremap <silent> <leader>rg  :Rg<CR>
 
-" Mapemanto para xclip
+" Mapeamentos para xclip
 vmap <C-y> :!xclip -f -sel clip<CR>
 map <C-p> :-1r !xclip -o -sel clip<CR>`z
 
 "Maximizer maps
 nnoremap <silent> <leader>ww :MaximizerToggle<CR>
+
+" Mapemanetos para typescript
+let g:tsuquyomi_disable_default_mappings = 1
+let g:tsuquyomi_shortest_import_path = 1
+autocmd FileType typescript nmap <buffer> <Leader>jnm <Plug>(TsuquyomiRenameSymbol)
+autocmd FileType typescript nnoremap <buffer> <leader>jfx :TsuImport<CR>
+autocmd FileType typescript nnoremap <buffer> <leader>jgd :TsuDefinition<CR>
+autocmd FileType typescript nnoremap <buffer> <leader>jtd :TsuTypeDefinition<CR>
+autocmd FileType typescript nnoremap <buffer> <leader>jr :TsuReferences<CR>
+autocmd FileType typescript nnoremap <buffer> <leader>ji :TsuImplementation<CR>
 
 " Abbreviations
 abbr _bash #!/bin/bash
