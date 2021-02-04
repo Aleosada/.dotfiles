@@ -52,6 +52,11 @@ Plug 'omnisharp/omnisharp-vim'
 Plug 'othree/yajs.vim'
 Plug 'mxw/vim-jsx'
 
+" Prettier
+Plug 'prettier/vim-prettier', {
+  \ 'do': 'yarn install',
+  \ 'for': ['javascript', 'typescript', 'css', 'less', 'scss', 'json', 'graphql', 'markdown', 'vue', 'yaml', 'html'] }
+
 " Emmet
 Plug 'mattn/emmet-vim'
 
