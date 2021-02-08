@@ -270,7 +270,7 @@ map <C-p> :-1r !xclip -o -sel clip<CR>`z
 "Maximizer maps
 nnoremap <silent> <leader>ww :MaximizerToggle<CR>
 
-" Mapemanetos para typescript
+" Mapeamentos para typescript
 let g:tsuquyomi_disable_default_mappings = 1
 let g:tsuquyomi_shortest_import_path = 1
 autocmd FileType typescript nmap <buffer> <Leader>jnm <Plug>(TsuquyomiRenameSymbol)
@@ -285,6 +285,9 @@ nnoremap <C-n> :NERDTree<CR>
 nnoremap <C-t> :NERDTreeToggle<CR>
 nnoremap <C-f> :NERDTreeFind<CR>
 " }}}
+
+" Prettier config
+autocmd FileType typescript let g:prettier#config#single_quote = 'true'
 
 " Abbreviations
 abbr _bash #!/bin/bash
