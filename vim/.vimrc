@@ -9,6 +9,7 @@ set exrc                                                                " Faz o 
 set shiftwidth=4											            " Configura o tamanho da identação para 4 quando utilizado os comando de shift >> e <<
 set tabstop=4												            " Altera a quantidade de espaços do tab para 4
 set softtabstop=4
+autocmd FileType typescript setlocal shiftwidth=2 tabstop=2 softtabstop=2
 set expandtab												            " Faz com que o tab seja expandido para espaços em branco
 set autoindent												            " Copia a identação da linha anterior quando se abre uma nova linha
 set noerrorbells visualbell t_vb=                                       " Desabilita sons de erros
