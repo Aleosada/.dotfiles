@@ -1,6 +1,7 @@
-set background=dark
-colorscheme gruvbox
+vim.o.background="dark"
+vim.cmd('colorscheme gruvbox')
 
+--[[
 augroup ColorschemePreferences
   autocmd!
   " These preferences clear some gruvbox background colours, allowing transparency
@@ -12,3 +13,4 @@ augroup ColorschemePreferences
   autocmd ColorScheme * highlight link ALEWarningSign ModeMsg
   autocmd ColorScheme * highlight link ALEInfoSign    Identifier
 augroup END
+--]]

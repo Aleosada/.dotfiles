@@ -25,3 +25,11 @@ require('telescope').setup {
 }
 
 require('telescope').load_extension('fzy_native')
+
+vim.api.nvim_set_keymap('n', '<leader>ff', ':Telescope find_files<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<C-p>', ':Telescope git_files<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>fb', ':Telescope buffers<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>ft', ':Telescope help_tags<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>gb', ':Telescope git_branches<CR>', { noremap = true, silent = true })
+
+--nnoremap <leader>fp :lua require('telescope.builtin').grep_string({ search = vim.fn.input("Grep For > ")})<CR>
