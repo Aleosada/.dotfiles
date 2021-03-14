@@ -9,7 +9,7 @@ if fn.empty(fn.glob(install_path)) > 0 then
   execute 'packadd packer.nvim'
 end
 
-return require('packer').startup(function()
+return require('packer').startup(function(use)
   -- Packer can manage itself as an optional plugin
   use {'wbthomason/packer.nvim', opt = true}
   use 'nvim-lua/popup.nvim'
@@ -34,4 +34,7 @@ return require('packer').startup(function()
   use 'sirver/ultisnips'
   use 'honza/vim-snippets'
 
+  use 'preservim/nerdtree'
+  use 'ryanoasis/vim-devicons'
+  use 'tiagofumo/vim-nerdtree-syntax-highlight'
 end)
