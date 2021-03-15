@@ -18,8 +18,7 @@ vim.api.nvim_set_keymap('n', '<leader>rn', ':lua vim.lsp.buf.rename()<CR>', { no
 vim.api.nvim_set_keymap('n', 'K', ':lua vim.lsp.buf.hover()<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>ca', ':lua vim.lsp.buf.code_action()<CR>', { noremap = true, silent = true })
 
---[[
-nnoremap vsd :lua vim.lsp.util.show_line_diagnostics(); vim.lsp.util.show_line_diagnostics()<CR>
-nnoremap vn :lua vim.lsp.diagnostic.goto_next()<CR>
-nnoremap vll :lua vim.lsp.diagnostic.set_loclist()<CR>
---]]
+vim.api.nvim_set_keymap('n', '<leader>ds', ':lua vim.lsp.util.show_line_diagnostics()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>dn', ':lua vim.lsp.diagnostic.goto_next()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>dp', ':lua vim.lsp.diagnostic.goto_prev()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>dl', ':lua vim.lsp.diagnostic.set_loclist()<CR>', { noremap = true, silent = true })
