@@ -37,4 +37,6 @@ return require('packer').startup(function(use)
   use 'preservim/nerdtree'
   use 'ryanoasis/vim-devicons'
   use 'tiagofumo/vim-nerdtree-syntax-highlight'
+
+  use 'tpope/vim-commentary'
 end)
