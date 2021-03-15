@@ -24,6 +24,6 @@ vim.api.nvim_set_keymap('n', '<leader>dp', ':lua vim.lsp.diagnostic.goto_prev()<
 vim.api.nvim_set_keymap('n', '<leader>dl', ':lua vim.lsp.diagnostic.set_loclist()<CR>', { noremap = true, silent = true })
 
 vim.fn.sign_define('LspDiagnosticsSignError', { text='🔴', numhl = "LspDiagnosticsDefaultError" })
-vim.fn.sign_define('LspDiagnosticsSignWarning', { text='⚠️', numhl = "LspDiagnosticsDefaultWarning" })
+vim.fn.sign_define('LspDiagnosticsSignWarning', { text='', numhl = "LspDiagnosticsDefaultWarning" })
 vim.fn.sign_define('LspDiagnosticsSignInformation', { text='📖', numhl = "LspDiagnosticsDefaultInformation" })
 vim.fn.sign_define('LspDiagnosticsSignHint', { text='💡', numhl = "LspDiagnosticsDefaultHint" })
