@@ -39,4 +39,5 @@ return require('packer').startup(function(use)
   use 'tiagofumo/vim-nerdtree-syntax-highlight'
 
   use 'tpope/vim-commentary'
+  use 'tpope/vim-surround'
 end)
