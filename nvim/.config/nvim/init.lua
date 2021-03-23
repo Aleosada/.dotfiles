@@ -1,5 +1,6 @@
 require('plugins')
--- require('tree-sitter')
+require('tree-sitter')
+require('autopairs')
 require('osada.ultisnips')
 require('osada.emmet')
 require('osada.colorscheme')

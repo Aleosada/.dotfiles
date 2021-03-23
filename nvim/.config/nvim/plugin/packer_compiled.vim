@@ -32,10 +32,94 @@ local function try_loadstring(s, component, name)
 end
 
 _G.packer_plugins = {
+  ["completion-nvim"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/completion-nvim"
+  },
+  ["emmet-vim"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/emmet-vim"
+  },
+  nerdtree = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/nerdtree"
+  },
+  ["nvim-autopairs"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/nvim-autopairs"
+  },
+  ["nvim-lspconfig"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+  },
+  ["nvim-treesitter"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/nvim-treesitter"
+  },
   ["packer.nvim"] = {
     loaded = false,
     needs_bufread = false,
     path = "/home/aleosada/.local/share/nvim/site/pack/packer/opt/packer.nvim"
+  },
+  ["plenary.nvim"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+  },
+  ["popup.nvim"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/popup.nvim"
+  },
+  ["telescope-fzy-native.nvim"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/telescope-fzy-native.nvim"
+  },
+  ["telescope.nvim"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+  },
+  ultisnips = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/ultisnips"
+  },
+  ["vim-airline"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-airline"
+  },
+  ["vim-commentary"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-commentary"
+  },
+  ["vim-css-color"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-css-color"
+  },
+  ["vim-devicons"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-devicons"
+  },
+  ["vim-fugitive"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-fugitive"
+  },
+  ["vim-maximizer"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-maximizer"
+  },
+  ["vim-nerdtree-syntax-highlight"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-nerdtree-syntax-highlight"
+  },
+  ["vim-nightfly-guicolors"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors"
+  },
+  ["vim-snippets"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-snippets"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-surround"
   }
 }
 

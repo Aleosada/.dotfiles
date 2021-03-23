@@ -17,13 +17,16 @@ return require('packer').startup(function(use)
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-fzy-native.nvim'
 
-  use 'gruvbox-community/gruvbox'
+  -- use 'christianchiarulli/nvcode-color-schemes.vim'
+  -- use 'gruvbox-community/gruvbox'
+  use 'bluz71/vim-nightfly-guicolors'
 
   use 'vim-airline/vim-airline'
   use 'tpope/vim-fugitive'
 
-  use 'jiangmiao/auto-pairs'
   use 'szw/vim-maximizer'
+  -- use 'jiangmiao/auto-pairs'
+  use 'windwp/nvim-autopairs'
 
   use 'neovim/nvim-lspconfig'
   use 'nvim-lua/completion-nvim'
@@ -41,5 +44,5 @@ return require('packer').startup(function(use)
   use 'tpope/vim-commentary'
   use 'tpope/vim-surround'
 
-  -- use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 end)
