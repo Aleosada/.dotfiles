@@ -17,9 +17,9 @@ return require('packer').startup(function(use)
   use 'nvim-telescope/telescope.nvim'
   use 'nvim-telescope/telescope-fzy-native.nvim'
 
-  -- use 'christianchiarulli/nvcode-color-schemes.vim'
-  -- use 'gruvbox-community/gruvbox'
-  use 'bluz71/vim-nightfly-guicolors'
+  use 'christianchiarulli/nvcode-color-schemes.vim'
+  use 'gruvbox-community/gruvbox'
+  -- use 'bluz71/vim-nightfly-guicolors'
 
   use 'vim-airline/vim-airline'
   use 'tpope/vim-fugitive'
@@ -45,4 +45,6 @@ return require('packer').startup(function(use)
   use 'tpope/vim-surround'
 
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+
+  use 'vimwiki/vimwiki'
 end)
