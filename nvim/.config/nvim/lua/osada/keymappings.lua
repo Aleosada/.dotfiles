@@ -10,3 +10,6 @@ vim.cmd('inoremap <expr> <c-k> (\"\\<C-p>\")')
 
 --Maximizer maps
 vim.api.nvim_set_keymap('n', '<leader>ww', ':MaximizerToggle<CR>', { noremap = true, silent = true })
+
+-- Vim wiki maps
+vim.api.nvim_set_keymap('n', '<leader>wo', ':VimwikiIndex<CR>', { noremap = true, silent = true })
