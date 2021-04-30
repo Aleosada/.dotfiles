@@ -40,9 +40,17 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/emmet-vim"
   },
+  gruvbox = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/gruvbox"
+  },
   nerdtree = {
     loaded = true,
     path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/nerdtree"
+  },
+  ["nvcode-color-schemes.vim"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/nvcode-color-schemes.vim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -109,10 +117,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-nerdtree-syntax-highlight"
   },
-  ["vim-nightfly-guicolors"] = {
-    loaded = true,
-    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-nightfly-guicolors"
-  },
   ["vim-snippets"] = {
     loaded = true,
     path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-snippets"
@@ -120,6 +124,10 @@ _G.packer_plugins = {
   ["vim-surround"] = {
     loaded = true,
     path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-surround"
+  },
+  vimwiki = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vimwiki"
   }
 }
 
