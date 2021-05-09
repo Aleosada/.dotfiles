@@ -4,12 +4,12 @@ local nvim_lsp = require('lspconfig')
 local servers = {
     "pyright",
     "jsonls",
-    -- "tsserver",
+    "tsserver",
     "vimls",
     "yamlls",
     "dockerls",
     "angularls",
-    "denols"
+    -- "denols"
 }
 
 for _, lsp in ipairs(servers) do
