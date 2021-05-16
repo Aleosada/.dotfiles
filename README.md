@@ -18,7 +18,21 @@ Instalar o ***stow*** via package manager
 
 * * *
 
+## Emojis (Very Important!!!!)
+
+Instalar as fontes terminus-fonts e noto-fonts-emoji
+
+`yay -S terminus-fonts`
+`yay -S noto-fonts-emoji`
+
+Fazer o stow da pasta fontconfig
+`stow -vt ~ fontconfig`
+
+* * *
+
 ## Z Shell
+
+Para a acentuação funcionar o locale deve estar instalado para português
 
 Instalar o ***ZSH*** via package manager
 `sudo apt update`
