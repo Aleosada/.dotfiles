@@ -1,9 +1,8 @@
+local on_attach = require'completion'.on_attach
 local pid = vim.fn.getpid()
--- On linux/darwin if using a release build, otherwise under scripts/OmniSharp(.Core)(.cmd)
-local omnisharp_bin = "/path/to/omnisharp-repo/run"
--- on Windows
--- local omnisharp_bin = "/path/to/omnisharp/OmniSharp.exe"
+local omnisharp_bin = "/usr/bin/omnisharp"
+
 require'lspconfig'.omnisharp.setup{
+    on_attach = on_attach;
     cmd = { omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) };
-    ...
 }
