@@ -3,7 +3,7 @@
 pgrep -x sxhkd > /dev/null || sxhkd &
 
 setxkbmap -model abnt2 -layout br &
-light-locker &
+light-locker --no-lock-on-suspend &
 /usr/bin/dunst &
 bash ${HOME}/.config/polybar/launch.sh --forest &
 nitrogen --restore
