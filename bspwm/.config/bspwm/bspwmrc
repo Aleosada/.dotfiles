@@ -9,7 +9,8 @@ bash ${HOME}/.config/polybar/launch.sh --forest &
 nitrogen --restore
 picom --no-fading-openclose &
 
-bspc monitor -d I II III IV V VI VII VIII IX X
+bspc monitor DP-2 -d 1 2 3 4 5
+bspc monitor DP-4 -d 6 7 8 9 10
 
 bspc config border_width         0
 bspc config window_gap          12
