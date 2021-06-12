@@ -9,6 +9,7 @@ local servers = {
     "yamlls",
     "dockerls",
     "angularls",
+    "terraformls",
     -- "denols"
 }
 
