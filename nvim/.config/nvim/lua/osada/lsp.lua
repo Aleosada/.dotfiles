@@ -9,8 +9,13 @@ local servers = {
     "yamlls",
     "dockerls",
     "angularls",
-    "terraformls",
     -- "denols"
+}
+
+nvim_lsp.terraformls.setup{
+  on_attach = on_attach,
+  cmd = { "terraform-ls", "serve" },
+  filetypes = { "terraform", "tf", "tfvars", "hcl" }
 }
 
 for _, lsp in ipairs(servers) do
