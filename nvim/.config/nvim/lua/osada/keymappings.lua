@@ -13,3 +13,8 @@ vim.api.nvim_set_keymap('n', '<leader>ww', ':MaximizerToggle<CR>', { noremap = t
 
 -- Vim wiki maps
 vim.api.nvim_set_keymap('n', '<leader>wo', ':VimwikiIndex<CR>', { noremap = true, silent = true })
+
+-- Copy to clipboard maps
+vim.api.nvim_set_keymap('n', '<leader>y', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<leader>y', '"+y', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('v', '<leader>Y', 'gg"+yG', { noremap = true, silent = true })
