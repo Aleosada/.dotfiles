@@ -6,7 +6,6 @@ local servers = {
     "jsonls",
     "tsserver",
     "vimls",
-    "yamlls",
     "dockerls",
     "angularls",
     -- "denols"
