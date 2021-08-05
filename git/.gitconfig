@@ -3,3 +3,5 @@
 [user]
 	name = Alexandre Osada
 	email = alexandre.osada@gmail.com
+[init]
+	defaultBranch = main
