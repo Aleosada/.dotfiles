@@ -27,8 +27,8 @@ vim.api.nvim_set_keymap('v', 'K', ":m '<-2<CR>gv=gv", { noremap = true, silent =
 vim.api.nvim_set_keymap('v', 'J', ":m '>+1<CR>gv=gv", { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>k', ':m .-2<CR>==', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>j', ':m .+1<CR>==', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('i', '<C-k>', ':<esc>:m .-2<CR>==', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('i', '<C-j>', ':<esc>:m .+1<CR>==', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('i', '<C-k>', ':<esc>:m .-2<CR>==', { noremap = true, silent = true })
+-- vim.api.nvim_set_keymap('i', '<C-j>', ':<esc>:m .+1<CR>==', { noremap = true, silent = true })
 
 -- Undo breakpoints
 vim.api.nvim_set_keymap('i', ',', ',<c-g>u', { noremap = true, silent = true })
