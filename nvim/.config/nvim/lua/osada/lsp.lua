@@ -8,6 +8,7 @@ local servers = {
     "vimls",
     "dockerls",
     "angularls",
+    "gopls",
     -- "denols"
 }
 
