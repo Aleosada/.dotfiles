@@ -36,12 +36,19 @@ vim.api.nvim_set_keymap('n', '<leader>ca', ':lua vim.lsp.buf.code_action()<CR>',
 
 vim.api.nvim_set_keymap('n', '<leader>ff', ':lua vim.lsp.buf.formatting()<CR>', { noremap = true, silent = true })
 
-vim.api.nvim_set_keymap('n', '<leader>ds', ':lua vim.lsp.util.show_line_diagnostics()<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>dn', ':lua vim.lsp.diagnostic.goto_next()<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>dp', ':lua vim.lsp.diagnostic.goto_prev()<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('n', '<leader>dl', ':lua vim.lsp.diagnostic.set_loclist()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>e', ':lua vim.lsp.util.show_line_diagnostics()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>en', ':lua vim.lsp.diagnostic.goto_next()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>ep', ':lua vim.lsp.diagnostic.goto_prev()<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>el', ':lua vim.lsp.diagnostic.set_loclist()<CR>', { noremap = true, silent = true })
 
 vim.fn.sign_define('LspDiagnosticsSignError', { text='🔴', numhl = "LspDiagnosticsDefaultError" })
 vim.fn.sign_define('LspDiagnosticsSignWarning', { text='', numhl = "LspDiagnosticsDefaultWarning" })
 vim.fn.sign_define('LspDiagnosticsSignInformation', { text='📖', numhl = "LspDiagnosticsDefaultInformation" })
 vim.fn.sign_define('LspDiagnosticsSignHint', { text='💡', numhl = "LspDiagnosticsDefaultHint" })
+
+-- Disable virtual line errors
+vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
+    vim.lsp.diagnostic.on_publish_diagnostics, {
+        virtual_text = false
+    }
+)
