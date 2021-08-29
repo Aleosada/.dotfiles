@@ -27,7 +27,7 @@ function ToggleQFList(global)
     end
 end
 
-vim.api.nvim_set_keymap('n', '<leader>qf', [[<Cmd>lua ToggleQFList(0)<CR>]], { noremap=true, silent=true })
-vim.api.nvim_set_keymap('n', '<leader>lf', [[<Cmd>lua ToggleQFList(1)<CR>]], { noremap=true, silent=true })
+-- vim.api.nvim_set_keymap('n', '<leader>qf', [[<Cmd>lua ToggleQFList(0)<CR>]], { noremap=true, silent=true })
+-- vim.api.nvim_set_keymap('n', '<leader>lf', [[<Cmd>lua ToggleQFList(1)<CR>]], { noremap=true, silent=true })
 vim.api.nvim_set_keymap('n', '<leader>qn', ':cnext<CR>', { noremap=true, silent=true })
 vim.api.nvim_set_keymap('n', '<leader>qp', ':cprev<CR>', { noremap=true, silent=true })

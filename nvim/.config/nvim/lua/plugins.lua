@@ -43,6 +43,8 @@ return require('packer').startup(function(use)
   use 'ryanoasis/vim-devicons'
   use 'tiagofumo/vim-nerdtree-syntax-highlight'
 
+  use 'kyazdani42/nvim-web-devicons'
+
   use 'tpope/vim-commentary'
   use 'tpope/vim-surround'
 
