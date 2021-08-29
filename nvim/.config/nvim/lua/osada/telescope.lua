@@ -37,6 +37,7 @@ vim.api.nvim_set_keymap('n', '<leader>ps', ':Telescope lsp_document_symbols<CR>'
 vim.api.nvim_set_keymap('n', '<leader>pd', ':Telescope lsp_document_diagnostics<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>pa', ':Telescope lsp_code_actions<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>pr', ':Telescope registers<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>td', ':Telescope grep_string search=todo<CR>', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('n', '<leader>pm', ':Telescope marks<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>qf', ':Telescope quickfix<CR>', { noremap = true, silent = true })
