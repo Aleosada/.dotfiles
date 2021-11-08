@@ -1,4 +1,5 @@
-local on_attach = require'completion'.on_attach
+-- local on_attach = require'completion'.on_attach
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 local nvim_lsp = require('lspconfig')
 
 local servers = {
@@ -13,13 +14,14 @@ local servers = {
 }
 
 nvim_lsp.terraformls.setup{
-  on_attach = on_attach,
+  -- on_attach = on_attach,
   cmd = { "terraform-ls", "serve" },
-  filetypes = { "terraform", "tf", "tfvars", "hcl" }
+  filetypes = { "terraform", "tf", "tfvars", "hcl" },
+  capabilites = capabilities
 }
 
 for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup { on_attach = on_attach }
+  nvim_lsp[lsp].setup { capabilites = capabilities }
 end
 
 vim.o.completeopt = 'menuone,noinsert,noselect'

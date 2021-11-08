@@ -1,6 +1,7 @@
 USER = vim.fn.expand('$USER')
+local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protocol.make_client_capabilities())
 
-local on_attach = require'completion'.on_attach
+-- local on_attach = require'completion'.on_attach
 
 local sumneko_root_path = ""
 local sumneko_binary = ""
@@ -16,8 +17,9 @@ else
 end
 
 require'lspconfig'.sumneko_lua.setup {
+    capabilities = capabilities,
     cmd = {sumneko_binary, "-E", sumneko_root_path .. "/main.lua"},
-    on_attach = on_attach,
+    -- on_attach = on_attach,
     settings = {
         Lua = {
             runtime = {

@@ -29,12 +29,20 @@ return require('packer').startup(function(use)
   use 'windwp/nvim-autopairs'
 
   use 'neovim/nvim-lspconfig'
-  use 'nvim-lua/completion-nvim'
+  -- use 'nvim-lua/completion-nvim'
+  use 'hrsh7th/nvim-cmp'
+  use 'hrsh7th/cmp-nvim-lsp'
+  use 'hrsh7th/cmp-buffer'
+  use 'hrsh7th/cmp-path'
+  use 'hrsh7th/cmp-cmdline'
+
+  use 'onsails/lspkind-nvim'
 
   use 'ap/vim-css-color'
 
   use 'mattn/emmet-vim'
   use 'sirver/ultisnips'
+  use 'quangnguyen30192/cmp-nvim-ultisnips'
   use 'honza/vim-snippets'
 
   use 'tomlion/vim-solidity'
