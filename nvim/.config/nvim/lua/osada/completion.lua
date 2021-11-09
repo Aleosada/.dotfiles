@@ -2,6 +2,9 @@ local cmp = require'cmp'
 local lspkind = require('lspkind')
 
   cmp.setup({
+    completion = {
+        completeopt = 'menu,menuone,noselect,noinsert',
+    },
     snippet = {
       -- REQUIRED - you must specify a snippet engine
       expand = function(args)
@@ -12,15 +15,15 @@ local lspkind = require('lspkind')
       end,
     },
     mapping = {
-      ['<C-j>'] = cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }),
-      ['<C-k>'] = cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }),
+      ['<C-j>'] = cmp.mapping(cmp.mapping.select_next_item({ behavior = cmp.SelectBehavior.Insert }), { 'i', 'c' }),
+      ['<C-k>'] = cmp.mapping(cmp.mapping.select_prev_item({ behavior = cmp.SelectBehavior.Insert }), { 'i', 'c' }),
       ['<C-d>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
       ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
       ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
-      ['<C-y>'] = cmp.mapping.confirm({
+      ['<C-y>'] = cmp.mapping(cmp.mapping.confirm({
           select = true,
           behavior = cmp.ConfirmBehavior.Replace
-      }),
+      }), { 'i', 'c' }),
       ['<C-e>'] = cmp.mapping({
         i = cmp.mapping.abort(),
         c = cmp.mapping.close(),
@@ -31,19 +34,26 @@ local lspkind = require('lspkind')
         format = lspkind.cmp_format({with_text = true, menu = ({
             buffer = "[Buffer]",
             nvim_lsp = "[LSP]",
+            -- vsnip = "[Snips]",
             ultisnips = "[Snips]",
+            treesitter = "[Treesitter]",
+            zsh = "[zsh]",
+            path = "[Path]",
         })})
     },
     sources = cmp.config.sources({
-      { name = 'ultisnips' }, -- For ultisnips users.
       { name = 'nvim_lsp' },
+      { name = 'ultisnips' }, -- For ultisnips users.
       -- { name = 'vsnip' }, -- For vsnip users.
-      -- { name = 'luasnip' }, -- For luasnip users.
+      { name = 'luasnip' }, -- For luasnip users.
       -- { name = 'snippy' }, -- For snippy users.
         }, {
-      { name = 'buffer', keyword_length = 5 },
+      { name = 'buffer', keyword_length = 3 },
       { name = 'path' },
-    })
+    }),
+    experimental = {
+        ghost_text = true
+    }
   })
 
 
@@ -54,11 +64,11 @@ local lspkind = require('lspkind')
   --   }
   -- })
 
-  -- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
-  -- cmp.setup.cmdline(':', {
-  --   sources = cmp.config.sources({
-  --     { name = 'path' }
-  --   }, {
-  --     { name = 'cmdline' }
-  --   })
-  -- })
+-- Use cmdline & path source for ':' (if you enabled `native_menu`, this won't work anymore).
+cmp.setup.cmdline(':', {
+    sources = cmp.config.sources({
+      { name = 'path' }
+    }, {
+      { name = 'cmdline' }
+    })
+})

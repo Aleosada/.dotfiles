@@ -5,6 +5,6 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 
 require'lspconfig'.omnisharp.setup{
     -- on_attach = on_attach;
-    capabilites = capabilities,
+    capabilities = capabilities,
     cmd = { omnisharp_bin, "--languageserver" , "--hostPID", tostring(pid) };
 }

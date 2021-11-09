@@ -21,10 +21,10 @@ nvim_lsp.terraformls.setup{
 }
 
 for _, lsp in ipairs(servers) do
-  nvim_lsp[lsp].setup { capabilites = capabilities }
+  nvim_lsp[lsp].setup { capabilities = capabilities }
 end
 
-vim.o.completeopt = 'menuone,noinsert,noselect'
+vim.o.completeopt = 'menu,menuone,noinsert,noselect'
 vim.g.completion_matching_strategy_list = {'exact', 'substring', 'fuzzy'}
 
 vim.api.nvim_set_keymap('n', '<leader>gd', ':lua vim.lsp.buf.definition()<CR>', { noremap = true, silent = true })

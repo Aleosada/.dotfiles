@@ -3,7 +3,7 @@ local capabilities = require('cmp_nvim_lsp').update_capabilities(vim.lsp.protoco
 
 require'lspconfig'.yamlls.setup {
   -- on_attach = on_attach,
-  capabilites = capabilities,
+  capabilities = capabilities,
   settings = {
       yaml = {
           customTags = {
