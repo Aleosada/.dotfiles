@@ -20,14 +20,14 @@ local lspkind = require('lspkind')
       ['<C-d>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
       ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
       ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
-      ['<C-y>'] = cmp.mapping(cmp.mapping.confirm({
+      ['<C-l>'] = cmp.mapping(cmp.mapping.confirm({
           select = true,
           behavior = cmp.ConfirmBehavior.Replace
       }), { 'i', 'c' }),
       ['<C-e>'] = cmp.mapping({
         i = cmp.mapping.abort(),
         c = cmp.mapping.close(),
-      }),
+      })
       -- ['<CR>'] = cmp.mapping.confirm({ select = true }),
     },
     formatting = {
@@ -41,6 +41,7 @@ local lspkind = require('lspkind')
             path = "[Path]",
         })})
     },
+    preselect = cmp.PreselectMode.None,
     sources = cmp.config.sources({
       { name = 'nvim_lsp' },
       { name = 'ultisnips' }, -- For ultisnips users.
