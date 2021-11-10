@@ -20,7 +20,7 @@ local lspkind = require('lspkind')
       ['<C-d>'] = cmp.mapping(cmp.mapping.scroll_docs(-4), { 'i', 'c' }),
       ['<C-f>'] = cmp.mapping(cmp.mapping.scroll_docs(4), { 'i', 'c' }),
       ['<C-Space>'] = cmp.mapping(cmp.mapping.complete(), { 'i', 'c' }),
-      ['<C-l>'] = cmp.mapping(cmp.mapping.confirm({
+      ['<C-y>'] = cmp.mapping(cmp.mapping.confirm({
           select = true,
           behavior = cmp.ConfirmBehavior.Replace
       }), { 'i', 'c' }),
