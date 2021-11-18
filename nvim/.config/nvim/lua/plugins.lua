@@ -61,4 +61,6 @@ return require('packer').startup(function(use)
   use 'vimwiki/vimwiki'
 
   use 'puremourning/vimspector'
+
+  -- use 'uarun/vim-protobuf'
 end)
