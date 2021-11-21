@@ -18,3 +18,6 @@
 augroup filetype
   au! BufRead,BufNewFile *.proto setfiletype proto
 augroup end
+
+" automatically rebalance windows on vim resize
+autocmd VimResized * :wincmd =
