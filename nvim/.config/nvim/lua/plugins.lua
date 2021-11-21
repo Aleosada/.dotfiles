@@ -62,5 +62,7 @@ return require('packer').startup(function(use)
 
   use 'puremourning/vimspector'
 
+  use 'christoomey/vim-tmux-navigator'
+
   -- use 'uarun/vim-protobuf'
 end)

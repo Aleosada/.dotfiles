@@ -210,11 +210,6 @@ _G.packer_plugins = {
     path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-nerdtree-syntax-highlight",
     url = "https://github.com/tiagofumo/vim-nerdtree-syntax-highlight"
   },
-  ["vim-protobuf"] = {
-    loaded = true,
-    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-protobuf",
-    url = "https://github.com/uarun/vim-protobuf"
-  },
   ["vim-snippets"] = {
     loaded = true,
     path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-snippets",
