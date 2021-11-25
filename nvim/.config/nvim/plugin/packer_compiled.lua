@@ -225,6 +225,16 @@ _G.packer_plugins = {
     path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
   },
+  ["vim-test"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-test",
+    url = "https://github.com/vim-test/vim-test"
+  },
+  ["vim-tmux-navigator"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
+    url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
   vimspector = {
     loaded = true,
     path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vimspector",

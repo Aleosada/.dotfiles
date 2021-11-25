@@ -64,5 +64,8 @@ return require('packer').startup(function(use)
 
   use 'christoomey/vim-tmux-navigator'
 
+  use 'vim-test/vim-test'
+  use { "rcarriga/vim-ultest", requires = {"vim-test/vim-test"}, run = ":UpdateRemotePlugins" }
+
   -- use 'uarun/vim-protobuf'
 end)
