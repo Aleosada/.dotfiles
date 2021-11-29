@@ -4,7 +4,6 @@ local nvim_lsp = require('lspconfig')
 
 local servers = {
     "pyright",
-    "jsonls",
     "tsserver",
     "vimls",
     "dockerls",
