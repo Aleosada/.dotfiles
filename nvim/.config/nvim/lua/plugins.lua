@@ -44,6 +44,7 @@ return require('packer').startup(function(use)
   use 'sirver/ultisnips'
   use 'quangnguyen30192/cmp-nvim-ultisnips'
   use 'honza/vim-snippets'
+  -- use {'honza/vim-snippets', rtp = '.'}
 
   use 'tomlion/vim-solidity'
 
@@ -54,6 +55,7 @@ return require('packer').startup(function(use)
   use 'kyazdani42/nvim-web-devicons'
 
   use 'tpope/vim-commentary'
+  use 'JoosepAlviste/nvim-ts-context-commentstring'
   use 'tpope/vim-surround'
 
   use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}

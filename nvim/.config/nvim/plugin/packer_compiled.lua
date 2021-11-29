@@ -139,6 +139,11 @@ _G.packer_plugins = {
     path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-ts-context-commentstring"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/nvim-ts-context-commentstring",
+    url = "https://github.com/JoosepAlviste/nvim-ts-context-commentstring"
+  },
   ["nvim-web-devicons"] = {
     loaded = true,
     path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
@@ -234,6 +239,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-tmux-navigator",
     url = "https://github.com/christoomey/vim-tmux-navigator"
+  },
+  ["vim-ultest"] = {
+    loaded = true,
+    path = "/home/aleosada/.local/share/nvim/site/pack/packer/start/vim-ultest",
+    url = "https://github.com/rcarriga/vim-ultest"
   },
   vimspector = {
     loaded = true,
