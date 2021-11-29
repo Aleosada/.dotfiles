@@ -44,3 +44,5 @@ vim.cmd('autocmd FileType javascript setlocal ts=2 sts=2 sw=2 expandtab')
 vim.cmd('autocmd FileType typescript setlocal ts=2 sts=2 sw=2 expandtab')
 vim.cmd('autocmd FileType yaml setlocal ts=2 sts=2 sw=2 expandtab')
 vim.cmd('autocmd FileType tf setlocal ts=2 sts=2 sw=2 expandtab')
+
+vim.cmd('autocmd VimResized * :wincmd =')
