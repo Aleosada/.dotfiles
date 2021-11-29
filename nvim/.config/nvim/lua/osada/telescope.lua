@@ -32,6 +32,7 @@ vim.api.nvim_set_keymap('n', '<leader>pg', ':lua require("osada.functions").grep
 vim.api.nvim_set_keymap('n', '<leader>pb', ':Telescope buffers<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>gb', ':Telescope git_branches<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>ph', ':Telescope help_tags<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', '<leader>pt', ':Telescope file_browser<CR>', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('n', '<leader>ps', ':Telescope lsp_document_symbols<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>pd', ':Telescope lsp_document_diagnostics<CR>', { noremap = true, silent = true })
