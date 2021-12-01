@@ -42,10 +42,10 @@ vim.api.nvim_set_keymap('n', '<leader>ej', ':lua vim.lsp.diagnostic.goto_next()<
 vim.api.nvim_set_keymap('n', '<leader>ek', ':lua vim.lsp.diagnostic.goto_prev()<CR>', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<leader>el', ':lua vim.lsp.diagnostic.set_loclist()<CR>', { noremap = true, silent = true })
 
-vim.fn.sign_define('LspDiagnosticsSignError', { text='🔴', numhl = "LspDiagnosticsDefaultError" })
-vim.fn.sign_define('LspDiagnosticsSignWarning', { text='', numhl = "LspDiagnosticsDefaultWarning" })
-vim.fn.sign_define('LspDiagnosticsSignInformation', { text='📖', numhl = "LspDiagnosticsDefaultInformation" })
-vim.fn.sign_define('LspDiagnosticsSignHint', { text='💡', numhl = "LspDiagnosticsDefaultHint" })
+vim.fn.sign_define('DiagnosticSignError', { text='🔴', numhl = "DiagnosticDefaultError" })
+vim.fn.sign_define('DiagnosticSignWarning', { text='', numhl = "DiagnosticDefaultWarning" })
+vim.fn.sign_define('DiagnosticSignInformation', { text='📖', numhl = "DiagnosticDefaultInformation" })
+vim.fn.sign_define('DiagnosticSignHint', { text='💡', numhl = "DiagnosticDefaultHint" })
 
 -- Disable virtual line errors
 vim.lsp.handlers["textDocument/publishDiagnostics"] = vim.lsp.with(
