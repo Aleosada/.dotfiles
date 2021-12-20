@@ -9,6 +9,8 @@ local servers = {
     "dockerls",
     "angularls",
     "gopls",
+    "solidity_ls",
+    -- "solang",
     -- "denols"
 }
 
