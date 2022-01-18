@@ -10,6 +10,7 @@ local servers = {
     "angularls",
     "gopls",
     "solidity_ls",
+    "rust_analyzer",
     -- "solang",
     -- "denols"
 }
