@@ -13,7 +13,12 @@ return {
 				require("neotest-python"),
 			},
 		})
-
+		vim.keymap.set(
+			"n",
+			"<leader>td",
+			"<cmd>lua require('neotest').run.run({strategy = 'dap'})<CR>",
+			{ desc = "[T]est [D]ebug" }
+		)
 		vim.keymap.set("n", "<leader>tt", "<cmd>lua require('neotest').run.run()<CR>", { desc = "[T]est nearest" })
 		vim.keymap.set(
 			"n",

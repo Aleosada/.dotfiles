@@ -47,6 +47,7 @@ require("lazy").setup({
 	require("custom.unittest"),
 	require("custom.harpoon"),
 	require("custom.typescript"),
+	require("custom.debugger"),
 }, {
 	ui = {
 		-- If you are using a Nerd Font: set icons to an empty table which will use the
