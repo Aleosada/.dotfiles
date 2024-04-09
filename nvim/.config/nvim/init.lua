@@ -43,7 +43,7 @@ require("lazy").setup({
 	require("custom.todo"),
 	require("custom.mini"),
 	require("custom.treesitter"),
-	-- require("custom.chatgpt"),
+	require("custom.chatgpt"),
 	require("custom.unittest"),
 	require("custom.harpoon"),
 	require("custom.typescript"),
